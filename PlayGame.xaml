@@ -178,7 +178,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">489.5,254 489.5,304</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Get Game Turn" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_3" JSFunction="&#xD;&#xA;var element = document.getElementById('processgif');&#xD;&#xA;element.style.setProperty('visibility','hidden');&#xD;&#xA;game.turn();&#xD;&#xA;" MessageId="1234" Result="[currentPlayerColor]">
+              <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Get Game Turn" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_3" JSFunction="&#xA;game.turn();&#xA;" MessageId="1234" Result="[currentPlayerColor]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,7 +192,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <av:Point x:Key="ShapeLocation">454.5,304</av:Point>
                       <av:Size x:Key="ShapeSize">70,87</av:Size>
-                      <av:PointCollection x:Key="FalseConnector">524.5,347.5 579,347.5</av:PointCollection>
+                      <av:PointCollection x:Key="FalseConnector">524.5,347.5 574.5,347.5</av:PointCollection>
                       <av:PointCollection x:Key="TrueConnector">454.5,347.5 380,347.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -202,10 +202,10 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">180,336.5</av:Point>
                           <av:Size x:Key="ShapeSize">200,22</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">280,358.5 280,408.5</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">280,358.5 280,388.5 279.5,388.5 279.5,408.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Find Game Over Or Not" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_4" JSFunction="&#xD;&#xA;var element = document.getElementById('processgif');&#xD;&#xA;element.style.setProperty('visibility','unset');&#xD;&#xA;game.game_over();&#xD;&#xA;" MessageId="1234" Result="[gameOver]">
+                      <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Find Game Over Or Not" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_4" JSFunction="[&quot;function showText(color) {var element = document.getElementById('processgif');element.style.setProperty('visibility', 'unset');var text = document.getElementById('user_info');if (color == 'b') {text.innerHTML = 'Bot processing black side, Please wait..!';} else {text.innerHTML = 'Bot processing white side, Please wait..!';}var abc = game.game_over();return abc;}showText('&quot;+currentPlayerColor+&quot;');&quot;]" MessageId="1234" Result="[gameOver]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -289,23 +289,41 @@
                     </FlowStep>
                   </FlowDecision.True>
                   <FlowDecision.False>
-                    <FlowStep x:Name="__ReferenceID6">
+                    <FlowStep x:Name="__ReferenceID14">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">579,336.5</av:Point>
+                          <av:Point x:Key="ShapeLocation">574.5,336.5</av:Point>
                           <av:Size x:Key="ShapeSize">200,22</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">679,336.5 679,243 589.5,243</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">674.5,336.5 674.5,306.5 620,306.5 620,291</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_1">
+                      <r:ChromeWebSocketExecuteJS Result="{x:Null}" ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Hide processing gif" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_6" JSFunction="[&quot;function showText(color) {var element = document.getElementById('processgif');element.style.setProperty('visibility', 'hidden');var text = document.getElementById('user_info');if (color == 'b') {text.innerHTML = 'Your turn on black side..!';} else {text.innerHTML = 'Your turn on white side..!';}return '';}showText('&quot;+currentPlayerColor+&quot;');&quot;]" MessageId="1234">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </Delay>
+                      </r:ChromeWebSocketExecuteJS>
                       <FlowStep.Next>
-                        <x:Reference>__ReferenceID2</x:Reference>
+                        <FlowStep x:Name="__ReferenceID6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">520,269</av:Point>
+                              <av:Size x:Key="ShapeSize">200,22</av:Size>
+                              <av:PointCollection x:Key="ConnectorLocation">620,269 620,243 589.5,243</av:PointCollection>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Delay>
+                          <FlowStep.Next>
+                            <x:Reference>__ReferenceID2</x:Reference>
+                          </FlowStep.Next>
+                        </FlowStep>
                       </FlowStep.Next>
                     </FlowStep>
                   </FlowDecision.False>
@@ -329,5 +347,6 @@
     <x:Reference>__ReferenceID11</x:Reference>
     <x:Reference>__ReferenceID12</x:Reference>
     <x:Reference>__ReferenceID13</x:Reference>
+    <x:Reference>__ReferenceID14</x:Reference>
   </Flowchart>
 </Activity>
