@@ -2,6 +2,35 @@
   "Packages": [
     {
       "Package": {
+        "Id": "ActivitiesJSFunctions",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\VinoJash\\.nuget\\packages\\activitiesjsfunctions/1.0.1\\lib/RunJavaScript.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Excel.Activities",
+        "Version": "2.6.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\VinoJash\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\uipath.excel.activities/2.6.1\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\uipath.excel.activities/2.6.1\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\uipath.excel.activities/2.6.1\\lib/net461/UiPath.Excel.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "1.5.0"
       },
@@ -109,6 +138,18 @@
     },
     {
       "Package": {
+        "Id": "UiPathTeam.ServiceNow.Activities",
+        "Version": "1.0.0.112"
+      },
+      "Assemblies": [
+        "C:\\Users\\VinoJash\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\restsharp/106.3.1\\lib/net452/RestSharp.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\uipathteam.servicenow.activities/1.0.0.112\\lib/net452/UiPathTeam.ServiceNow.Activities.dll",
+        "C:\\Users\\VinoJash\\.nuget\\packages\\uipathteam.servicenow.activities/1.0.0.112\\lib/net452/UiPathTeam.ServiceNow.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "WebSocket4Net",
         "Version": "0.15.2"
       },
@@ -123,47 +164,6 @@
         "C:\\Users\\VinoJash\\.nuget\\packages\\system.security.cryptography.primitives/4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
         "C:\\Users\\VinoJash\\.nuget\\packages\\system.security.cryptography.x509certificates/4.3.0\\lib/net461/System.Security.Cryptography.X509Certificates.dll",
         "C:\\Users\\VinoJash\\.nuget\\packages\\websocket4net/0.15.2\\lib/net45/WebSocket4Net.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "ActivitiesJSFunctions",
-        "Version": "1.0.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\VinoJash\\.nuget\\packages\\activitiesjsfunctions/1.0.1\\lib/RunJavaScript.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Excel.Activities",
-        "Version": "2.6.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\VinoJash\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\uipath.excel.activities/2.6.1\\lib/net461/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\uipath.excel.activities/2.6.1\\lib/net461/UiPath.Excel.Activities.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\uipath.excel.activities/2.6.1\\lib/net461/UiPath.Excel.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPathTeam.ServiceNow.Activities",
-        "Version": "1.0.0.112"
-      },
-      "Assemblies": [
-        "C:\\Users\\VinoJash\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\restsharp/106.3.1\\lib/net452/RestSharp.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\uipathteam.servicenow.activities/1.0.0.112\\lib/net452/UiPathTeam.ServiceNow.Activities.dll",
-        "C:\\Users\\VinoJash\\.nuget\\packages\\uipathteam.servicenow.activities/1.0.0.112\\lib/net452/UiPathTeam.ServiceNow.dll"
       ]
     }
   ],

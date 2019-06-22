@@ -2275,9 +2275,9 @@
     "restore": {
       "projectUniqueName": "ChessBot",
       "projectName": "ChessBot",
-      "projectPath": "C:\\Users\\VinoJash\\Documents\\UiPath\\ChessBot\\.local",
+      "projectPath": "C:\\Users\\VinoJash\\Documents\\UIPath-ChessGame\\.local",
       "packagesPath": "C:\\Users\\VinoJash\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VinoJash\\Documents\\UiPath\\ChessBot\\.local"
+      "outputPath": "C:\\Users\\VinoJash\\Documents\\UIPath-ChessGame\\.local"
     },
     "frameworks": {
       "net461": {
