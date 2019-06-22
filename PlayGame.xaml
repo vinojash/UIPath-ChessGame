@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1121,836</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1121,796</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PlayGame_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -178,7 +178,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">489.5,254 489.5,304</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Get Game Turn" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_3" JSFunction="&#xA;game.turn();&#xA;" MessageId="1234" Result="[currentPlayerColor]">
+              <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Get Game Turn" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_3" JSFunction="&#xD;&#xA;var element = document.getElementById('processgif');&#xD;&#xA;element.style.setProperty('visibility','hidden');&#xD;&#xA;game.turn();&#xD;&#xA;" MessageId="1234" Result="[currentPlayerColor]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -205,7 +205,7 @@
                           <av:PointCollection x:Key="ConnectorLocation">280,358.5 280,408.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Find Game Over Or Not" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_4" JSFunction="&#xA;game.game_over();&#xA;" MessageId="1234" Result="[gameOver]">
+                      <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Find Game Over Or Not" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_4" JSFunction="&#xD;&#xA;var element = document.getElementById('processgif');&#xD;&#xA;element.style.setProperty('visibility','unset');&#xD;&#xA;game.game_over();&#xD;&#xA;" MessageId="1234" Result="[gameOver]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -232,7 +232,7 @@
                                   <av:PointCollection x:Key="ConnectorLocation">869.5,452 890,452 890,290</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Play My Turn" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_2" JSFunction="&#xD;&#xA;function getMoveInformation(){&#xD;&#xA;    var position=calcBestMove(3, game, game.turn())[1];&#xD;&#xA;    var moveInformation=game.move(position);&#xD;&#xA;    game.undo();&#xD;&#xA;    return JSON.stringify(moveInformation);&#xD;&#xA;}&#xD;&#xA;getMoveInformation();&#xD;&#xA;" MessageId="1233" Result="[moveInformation]">
+                              <r:ChromeWebSocketExecuteJS ChromeWebSocketURL="[chromeWebSocketURL]" DisplayName="Play My Turn" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ChromeWebSocketExecuteJS_2" JSFunction="&#xA;function getMoveInformation(){&#xA;    var position=calcBestMove(3, game, game.turn())[1];&#xA;    var moveInformation=game.move(position);&#xA;    game.undo();&#xA;    return JSON.stringify(moveInformation);&#xA;}&#xA;getMoveInformation();&#xA;" MessageId="1233" Result="[moveInformation]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
